@@ -4,6 +4,10 @@
 
     <title>Identify your details</title>
 
+    <!-- Css link -->
+
+    <link rel="stylesheet" href="./style.css">
+
 </head>
 
 <body>
@@ -63,6 +67,33 @@
             </tr>
 
         </table>
+    </div>
+
+    <div class="cnic">
+
+    <!--======== Cnic Identifier ====== -->
+
+        <h3>CNIC Identifier</h3>
+    
+        <input type="email" placeholder="Enter CNIC No.(00000-0000000-0) " id="cnic-checker">
+        <button onclick="cnic()">Check CNIC</button>
+    
+        <div class="details">
+            <table cellpadding="10px" cellspacing="10px">
+                <tr>
+                    <td>Tehsil : </td>
+                      <td id="tehsil"></td>
+                </tr>
+                <tr>
+                    <td>Number : </td>
+                      <td id="num"></td>
+                </tr>
+                <tr>
+                    <td>Gender : </td>
+                      <td id="gender"></td>
+                </tr>
+            </table>
+        </div>
     </div>
 
 
