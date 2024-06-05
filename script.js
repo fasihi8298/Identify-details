@@ -32,3 +32,37 @@ let gender = cnic.split('-')[2]
     document.getElementById('num').innerHTML = num;
     document.getElementById('gender').innerHTML = gender;
 }
+// function for mobile
+
+function mobile(){
+    let mobile = document.getElementById('mobile-checker').value;
+    let code= mobile.split('-')[0]
+    let number = mobile.split('-')[1]
+
+    
+    document.getElementById('code').innerHTML = code;
+    document.getElementById('number').innerHTML = number
+
+    if(code >= "0300" && code < '0310'){
+        document.getElementById('company').innerText = "Jazz"
+    }
+
+  else  if(code >= '0310' && code < '0320'){
+        document.getElementById('company').innerText = "Zong"
+    }
+
+ else  if(code >= '0320' && code < '0330'){
+        document.getElementById('company').innerText = "Warid"
+    } 
+    
+ else  if(code >= '0330' && code < '0340'){
+        document.getElementById('company').innerText = "Ufone"
+    }
+    
+ else  if(code >= '0340' && code < '0350'){
+        document.getElementById('company').innerText = "Telenor"
+    }
+
+ 
+
+}
